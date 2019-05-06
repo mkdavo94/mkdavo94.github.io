@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8">
+    <title>Урок CSS.Часть 3 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+<header class="headers grid">
+    <div class="headers-content grid">
+        <h1>CSS Grid Layout</h1>
+        <div class="headers-buttons">
+            <a href="#" class="button">Запуск</a>
+            <a href="#" class="button button-greys">Домой</a>
+        </div>
+    </div>
+
+</header>
+<section class="portman-sections grid">
+    <div class="item-grid grid" style="background-image: url('img/header.jpg')"><span>Grid-template-columns</span></div>
+    <div class="item-grid grid" style="background-image: url('img/header.jpg')"><span>Grid-template-rows</span></div>
+    <div class="item-grid grid" style="background-image: url('img/header.jpg')"><span>Grid-template-areas</span></div>
+    <div class="item-grid grid" style="background-image: url('img/header.jpg')"><span>Grid-template</span></div>
+    <div class="item-grid grid" style="background-image: url('img/header.jpg')"><span>Grid-column-gap</span></div>
+    <div class="item-grid grid" style="background-image: url('img/header.jpg')"><span>Grid-row-gap</span></div>
+    <div class="item-grid grid" style="background-image: url('img/header.jpg')"><span>Grid-gap</span></div>
+    <div class="item-grid grid" style="background-image: url('img/header.jpg')"><span>Justify-items</span></div>
+    <div class="item-grid grid" style="background-image: url('img/header.jpg')"><span>Grid-auto-rows</span></div>
+    <div class="buttonitem text-center">
+        <a href="#" class="button">Подробнее</a>
+    </div>
+
+
+</section>
+
+<section class="sections-2 landings-section">
+    <div class="container grid">
+        <div class="colons-left">
+            <h2>Свойства для родительского элемента <br> (Контейнера сетки)</h2>
+            <p>display
+                Определяет элемент как контейнер и устанавливает новый контекст форматирования сетки для его
+                содержимого.
+            <p>Значения:
+
+        </div>
+        <div class="colons-right">
+            <img src="img/example.jpg" alt="example" class="img-responsive">
+
+        </div>
+    </div>
+
+</section>
+<section class="forms">
+    <div class="container">
+        <form class="grid">
+
+            <div><input type="text" name="" placeholder="name" required></div>
+            <div><input type="text" name="" placeholder="surname"></div>
+            <div><input type="text" name="" placeholder="mail"></div>
+            <div>
+                <button class="button">Понравился</button>
+            </div>
+        </form>
+
+
+    </div>
+
+</section>
+
+<section class="section-3 landings-section">
+    <div class="container">
+        <h2>
+            Grid - формирует сетку как блок;
+
+        </h2>
+        <div class="block-home grid">
+            <a href="#" class="block-item grid">
+                <span class="block-item-img" style="background-image: url('img/grid3.png') ">   </span>
+            <span class="block-item-content">
+                               <h4>inline-grid</h4>
+                <p>формирует сетку как инлайновый блок;</p>
+
+            </span>
+            </a>
+            <a href="#" class="block-item grid">
+                <span class="block-item-img" style="background-image: url('img/logo.png') ">   </span>
+            <span class="block-item-content">
+                               <h4>subgrid </h4>
+                <p>если ваш контейнер это ещё и элемент (вложенная сетка), то вы можете использовать это свойство для
+                    обозначения того, чтобы размеры строк/колонок были взяты из родительского элемента, а не определяли
+                    собственный;</p>
+
+            </span>
+            </a>
+            <a href="#" class="block-item grid">
+                <span class="block-item-img" style="background-image: url('img/grid2.png') ">   </span>
+            <span class="block-item-content">
+                               <h4>grid-template-columns grid-tempate-rows
+                               </h4>
+                <p>Определяет колонки и строки сетки с помощью списка значений разделённого пробелами. Значения
+                    представляют из себя размер трека, а пробелы между ними представляют линии сетки.</p>
+
+            </span>
+            </a>
+            <a href="#" class="block-item grid">
+                <span class="block-item-img" style="background-image: url('img/grid-names.png') ">   </span>
+            <span class="block-item-content">
+                               <h4>grid-template
+                               </h4>
+                <p>Сокращение для grid-template-rows, grid-template-columns, и grid-template-areas.</p>
+
+            </span>
+            </a>
+            <a href="#" class="block-item grid">
+                <span class="block-item-img" style="background-image: url('img/grid-template-areas.png') ">   </span>
+            <span class="block-item-content">
+                               <h4>grid-template-areas
+                               </h4>
+                <p>Определяет шаблон сетки ссылаясь на имена областей, которые заданы с помощью свойства grid-area.
+                    Повторение названия области приводит к тому, что содержимое охватывает эти ячейки. Точка означает
+                    пустую ячейку. Сам синтаксис предоставляет визуализацию структуры сетки.</p>
+
+            </span>
+            </a>
+            <a href="#" class="block-item grid">
+                <span class="block-item-img grid" style="background-image: url('img/grid-auto-flow-row.png') ">   </span>
+            <span class="block-item-content">
+                               <h4>grid-auto-flow
+
+                               </h4>
+                <p>Если у вас есть элементы, которые вы явно не позиционируете в сетке, запускается алгоритм
+                    авто-размещения, чтобы их автоматически разместить. Это свойство контролирует то как алгоритм
+                    авто-размещения работает.
+
+                </p>
+
+            </span>
+            </a>
+
+        </div>
+        <div class="buttonitem text-center">
+            <a href="#" class="button">Домой</a>
+        </div>
+    </div>
+
+</section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-log">
+            CSS Grid  <span>Layout</span>
+        </div>
+        <div class="footer-copy">C</div>
+    </div>
+</footer>
+<link rel="stylesheet" href="style/style.css">
+
+</body>
+</html>
