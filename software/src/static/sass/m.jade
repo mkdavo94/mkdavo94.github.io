@@ -1,0 +1,216 @@
+html(lang="ru-RU")
+    head
+        link(href='static/css/main.css', rel='stylesheet')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title Hello
+    body
+        mixin icon(name,mod)
+            - mod = mod || ''
+            svg(class="icon icon-" + name + ' ' + mod)
+                use(xlink:href="/static/img/svg/symbol/sprite.svg#" + name)
+
+        section.main#home.js-scroll-step
+
+
+            .header#header-scroll.col-lg-10.col-md-10
+                .logo.col-lg-2.col-md-2
+                    a.logo(href="#home")
+                        img(src="static/img/logo_1.png", class="" alt="logo")
+                nav.menu.Quick-navigation.col-lg-7.col-md-8.col-sm-10
+                    ul
+                        li
+                            a.Quick-navigation-item(href='#home') Home
+                        li
+                            a.Quick-navigation-item(href='#about') About
+                        li
+                            a.Quick-navigation-item(href='#clients') Clients
+                        li
+                            a.Quick-navigation-item(href='#portfolio') Portfolio
+                        li
+                            a.Quick-navigation-item(href='#blog') Blog
+
+                        .Scroll-progress-indicator
+
+            .main-text.col-lg-10.col-md-12
+                h1 Hello, I'm </br> Dakota Jhonson
+
+                span I’m an Art Director & Photographer based in the San Francisco.
+                .headers-buttons
+                    a.button.button-hed.Quick-navigation-item(href='#') See My Works
+            .pagination
+                .scroll_cont
+                    a.scroll(href='#about')
+                        svg.scroll-down(viewBox='0 0 26 26', xmlns='http://www.w3.org/2000/svg')
+                            path(class="a1" d='M.046 2.582L2.13.498l10.837 10.836L23.803.498l2.084 2.084-12.92 12.92z')
+                            path( class="a2" d='M.046 13.582l2.084-2.084 10.837 10.836 10.836-10.836 2.084 2.084-12.92 12.92z')
+
+
+
+            .mainsocial.social
+                span.mainsocial__span
+                    a.mainsocial__span-link(href='#')
+                        +icon('facebook')
+
+                span.mainsocial__span
+                    a.mainsocial__span-link(href='')
+                        +icon('twitter')
+
+                span.mainsocial__span
+                    a.mainsocial__span-link(href='')
+                        +icon('instagram')
+                span.mainsocial__span
+                    a.mainsocial__span-link(href='#')
+                        +icon('flickr-')
+
+
+
+        section#about.about.js-scroll-step
+            .about_img.col-lg-5
+                img(src="static/img/about1.png", class="" alt="logo")
+            .about_content.col-lg-7
+                .about_hed.col-lg-10
+                    h1 About MySelf
+                    p Hey, thanks for stopping by. My name’s Dakota Jhonson junior an Hey, thanks for stopping by. My name’s Dakota Jhonson junior an Hey, thanks for stopping by. My name’s Dakota Jhonson junior an
+                    h2 What I Do?
+                .about_block.col-lg-12
+                    .block.col-lg-4
+                        a.block-item.linkks(href="#home")
+                            .block-item-h
+                                h3 FASHION
+                            .block-item-img
+                                span(style="background-image: url('static/img/about-item-poto-1.png') ")
+
+
+
+
+                    .block.col-lg-4
+                        a.block-item.linkks(href="#home")
+                            .block-item_h
+                                h3 PORTRAITS
+                            .block-item-img
+                                span(style="background-image: url('static/img/about-item-poto-2.png') ")
+
+
+                    .block.col-lg-4
+                        a.block-item.linkks(href="#home")
+                            .block-item_h
+                                h3 LIFESTYLE
+                            .block-item-img
+
+                                span(style="background-image: url('static/img/about-item-poto-3.png') ")
+
+                .about_button.col-lg-12
+                    a.button.button-hed.Quick-navigation-item(href='#') View My Flickr Profile
+
+
+
+
+        .brend(style="background: #2b2d5c ")
+            div(style="background-image: url('static/img/brend.png') ")
+
+                ul.col-lg-12
+                    li
+                        img(src="static/img/Beren4.png", class="" alt="logo")
+
+                    li
+                        img(src="static/img/Beren2.png", class="" alt="logo")
+
+                    li
+                        img(src="static/img/Beren1.png", class="" alt="logo")
+
+                    li
+                        img(src="static/img/Beren5.png", class="" alt="logo")
+
+                    li
+                        img(src="static/img/Beren4.png", class="" alt="logo")
+
+                    li
+                        img(src="static/img/Beren6.png", class="" alt="logo")
+
+
+        section#clients.clientc.js-scroll-step
+            .clientc-img.col-lg-4
+                img(src="static/img/about-item-poto-3.png", class="" alt="logo")
+
+            .clientc-content.col-lg-8
+                .col-lg-4
+                    .col-lg-12.item-1
+                        a.clientc-item.linkks(href="#home")
+                            .block-item-h
+                                h3 FASHION
+                            .block-item-img
+
+                                span(style="background-image: url('static/img/about-item-poto-3.png') ")
+
+
+                    .col-lg-12.item-1
+                        a.clientc-item.linkks(href="#home")
+                            .block-item-h
+                                h3 FASHION
+                            .block-item-img
+                                span(style="background-image: url('static/img/about-item-poto-3.png') ")
+
+
+
+
+
+                .col-lg-8.item-2
+                    .col-lg-8
+                        a.clientc-item.linkks(href="#home")
+                            .block-item-h
+                                h3 FASHION
+                            .block-item-img
+                                span(style="background-image: url('static/img/about-item-poto-3.png') ")
+
+                    .col-lg-4
+                        a.clientc-item.linkks(href="#home")
+                            .block-item-h
+                                h3 FASHION
+                            .block-item-img
+                                span(style="background-image: url('static/img/about-item-poto-3.png') ")
+
+                    .col-lg-6
+                        a.clientc-item.linkks(href="#home")
+                            .block-item-h
+                                h3 FASHION
+                            .block-item-img
+                                span(style="background-image: url('static/img/about-item-poto-3.png') ")
+
+                    .col-lg-6
+                        a.clientc-item.linkks(href="#home")
+                            .block-item-h
+                                h3 FASHION
+                            .block-item-img
+                                span(style="background-image: url('static/img/about-item-poto-3.png') ")
+
+                    .col-lg-12
+                        a.clientc-item.linkks(href="#home")
+                            .block-item-h
+                                h3 FASHION
+                            .block-item-img
+                                span(style="background-image: url('static/img/about-item-poto-3.png') ")
+
+
+        section#portfolio.js-scroll-step
+            h1 A
+            h1 A
+            h1 A
+            h1 A
+            h1 A
+
+        section#blog.js-scroll-step
+            h1 A
+            h1 A
+            h1 A
+            h1 A
+
+
+
+
+        button.Scroll-to-top Scroll To Top
+        script(src="static/js/libs.min.js")
+
+        script(src="static/js/main.js")
+
+
+

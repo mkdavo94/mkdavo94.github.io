@@ -1,0 +1,403 @@
+doctype html
+html(lang="ru-RU")
+    head
+        meta(http-equiv="Content-Type" content="text/html" charset="utf-8")
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(href='static/css/main.css', rel='stylesheet')
+    body
+        mixin icon(name,mod)
+            - mod = mod || ''
+            svg(class="icon icon-" + name + ' ' + mod)
+                use(xlink:href="static/img/svg/symbol/sprite.svg#" + name)
+        //#load
+        //    #load-center
+        //        #load-center-absolute
+        //            #object
+
+        section.main#home.js-scroll-step
+
+            .container.col-xxl-9.col-xl-9.col-lg-9.col-md-9.col-sm-9.col-xm-12
+
+
+                .header#header-scroll.col-xxl-9.col-xl-9.col-lg-9.col-md-9.col-sm-9.col-xm-12
+                    .logo
+                        a.logo(href="#home")
+                            img(src="static/img/logo.png", class="" alt="logo")
+                    .mobile-nav
+                        #responsive-menu-icon.responsive-menu-icon
+                            #a.responsive-menu-icon-line
+                            #b.responsive-menu-icon-line
+                            #c.responsive-menu-icon-line
+                    nav.menu.Quick-navigation.col-xxl-4.col-xl-5.col-lg-6.col-md-7.col-sm-10
+                        ul
+                            li
+                                a.Quick-navigation-item(href='#home') Home
+                            li
+                                a.Quick-navigation-item(href='#about') About
+                            li
+                                a.Quick-navigation-item(href='#clients') Clients
+                            li
+                                a.Quick-navigation-item(href='#portfolio') Portfolio
+                            li
+                                a.Quick-navigation-item(href='#blog') Blog
+
+                            .Scroll-progress-indicator
+
+                .main-text
+                    h1 Hello, I'm </br> David Mandalyan
+
+                    span I am a beginner front-end programmer
+                .headers-buttons
+                    a.buttons.button-hed.Quick-navigation-item(href='#') See My Works
+            .pagination
+                .scroll_cont
+                    a.scroll(href='#about')
+                        svg.scroll-down(viewBox='0 0 26 26', xmlns='http://www.w3.org/2000/svg')
+                            path(class="a1" d='M.046 2.582L2.13.498l10.837 10.836L23.803.498l2.084 2.084-12.92 12.92z')
+                            path( class="a2" d='M.046 13.582l2.084-2.084 10.837 10.836 10.836-10.836 2.084 2.084-12.92 12.92z')
+
+
+
+            .mainsocial.social.col-xm-9
+                span.mainsocial__span
+                    a.mainsocial__span-link(href='#')
+                        +icon('facebook')
+
+                span.mainsocial__span
+                    a.mainsocial__span-link(href='#')
+                        +icon('twitter')
+
+                span.mainsocial__span
+                    a.mainsocial__span-link(href='#')
+                        +icon('instagram')
+                span.mainsocial__span
+                    a.mainsocial__span-link(href='#')
+                        +icon('flickr-')
+
+
+
+        section#about.about.js-scroll-step
+            .about_img.col-xxl-4.col-xl-4.col-lg-4.col-md-5.col-sm-5.col-xm-4(style="background-image: url('static/img/Dav.jpeg') ")
+
+            .about_content.col-xxl-6.col-xl-6.col-lg-6.col-md-7.col-sm-7.col-xm-12
+                .about_hed.nn
+                    h1 About MySelf
+                    p Novice Specialist. I wish to grow and develop in the field of IT. Ready to go through practice, internship.
+                    h2 What I Do?
+                .about_block.nn
+
+                    a.block-item.linkks(href="#home")
+                        .block-item-h
+                            h3 BITRIX SMS
+                        .block-item-img
+                            span(style="background-image: url('static/img/about-item-poto-1.png') ")
+
+
+
+
+
+
+                    a.block-item.linkks(href="#home")
+                        .block-item_h
+                            h3 HTML/CSS Developer
+                        .block-item-img
+                            span(style="background-image: url('static/img/about-item-poto-2.png') ")
+
+
+
+                    a.block-item.linkks(href="#home")
+
+                        .block-item_h
+                            h3  FREELANCE
+                        .block-item-img
+
+                            span(style="background-image: url('static/img/about-item-poto-3.png') ")
+
+                .about_button.col-xxl-12.col-xl-12.col-lg-9.col-md-9.col-sm-10.col-xm-12
+                    a.buttons.button-hed.Quick-navigation-item(href='#') View My  Profile
+
+
+
+
+        .brend#clients(style="background-image: url('static/img/brend_headers.png') ").js-scroll-step
+            .container.col-xxl-9.col-xl-9.col-lg-9.col-md-9.col-sm-9.col-xm-12
+                .brend_headers
+                    h1 Happy Clients
+                .brend_bloks
+
+                    .blocks_item
+                        img(src="static/img/Beren4.png", class="" alt="logo")
+
+                    .blocks_item
+                        img(src="static/img/Beren2.png", class="" alt="logo")
+
+
+
+                    .blocks_item
+                        img(src="static/img/Beren5.png", class="" alt="logo")
+                    .blocks_item
+                        img(src="static/img/Beren1.png", class="" alt="logo")
+
+                    .blocks_item
+                        img(src="static/img/Beren4.png", class="" alt="logo")
+
+                    .blocks_item
+                        img(src="static/img/Beren6.png", class="" alt="logo")
+
+
+        section#portfolio.clientc.js-scroll-step
+            .clientc_img.col-1.col-xxl-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xm-12
+                .clientc_img-item
+                    h1 Hello, I'm </br> David Mandalyan
+                    span Frontend developer After the break, I decided to return to the profession, starting with self-restoration of information.
+                    a(href='#') Read More...
+            .clientc-content.col-2.col-xxl-8.col-xl-8.col-lg-8.col-md-8.col-sm-12
+                .col2
+                    .blocks
+                        .item-1.img-hover(style="background-image: url('static/img/clients1.png') ")
+                            figcaption
+                                i
+                                    span.mainsocial__span
+                                        a.mainsocial__span-link(href='#')
+                                            +icon('icons8')
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('facebook')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('twitter')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('instagram')
+                            .clinets-soc
+
+                    .blocks
+                        .item-1.img-hover(style="background-image: url('static/img/Dav.jpeg') ")
+                            figcaption
+                                i
+                                    span.mainsocial__span
+                                        a.mainsocial__span-link(href='#')
+                                            +icon('icons8')
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('facebook')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('twitter')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('instagram')
+                            .clinets-soc
+
+
+                    .about_button
+                        a.buttons.button-hed.Quick-navigation-item(href='#') See More
+
+
+
+
+                .col-3
+
+                    .blocks.col-xxl-9.col-xl-8.col-lg-8.col-md-8.col-sm-6.col-xm-12
+                        .item-2.img-hover(style="background-image: url('static/img/clients2.png') ")
+                            figcaption
+                                i
+                                    span.mainsocial__span
+                                        a.mainsocial__span-link(href='#')
+                                            +icon('icons8')
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('facebook')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('twitter')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('instagram')
+                            a.clinets-soc(href='#')
+
+                    .blocks.col-xxl-3.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-xm-12.bloks_margin1
+                        div.item-2.img-hover(style="background-image: url('static/img/clients3.png') ")
+                            figcaption
+                                i
+                                    span.mainsocial__span
+                                        a.mainsocial__span-link(href='#')
+                                            +icon('icons8')
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('facebook')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('twitter')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('instagram')
+                            .clinets-soc
+
+
+
+                    .blocks.col-xxl-6.col-xl-6.col-lg-6.col-md-6.col-sm-6.col-xm-12
+                        .item-2.img-hover(style="background-image: url('static/img/clients4.png') ")
+                            figcaption
+                                i
+                                    span.mainsocial__span
+                                        a.mainsocial__span-link(href='#')
+                                            +icon('icons8')
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('facebook')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('twitter')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('instagram')
+                            .clinets-soc
+
+
+                    .blocks.col-xxl-6.col-xl-6.col-lg-6.col-md-6.col-sm-6.col-xm-12.bloks_margin2
+                        .item-2.img-hover(style="background-image: url('static/img/cllients5.png') ")
+                            figcaption
+                                i
+                                    span.mainsocial__span
+                                        a.mainsocial__span-link(href='#')
+                                            +icon('icons8')
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('facebook')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('twitter')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('instagram')
+                        .clinets-soc
+
+                    .blocks.col-xxl-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xm-12.bloks_margin3
+                        .item-2.img-hover(style="background-image: url('static/img/clients7.png') ")
+                            figcaption
+                                i
+                                    span.mainsocial__span
+                                        a.mainsocial__span-link(href='#')
+                                            +icon('icons8')
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('facebook')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('twitter')
+
+                                span.mainsocial__span
+                                    a.mainsocial__span-link(href='#')
+                                        +icon('instagram')
+                        .clients-soc
+
+
+
+
+        section#blog.js-scroll-step
+            .blog
+                .blog1.col-xxl-4.col-xl-4.blog1.col-lg-4.col-md-4.col-sm-12.col-xm-12
+                    .blog_item
+                        .blog_item-img
+                            span(style="background-image: url('static/img/blog1.png') ")
+                        .blog_item-content
+                            h3 Tolerance is more powerful than force.
+                            h5 Success doesn't come to you…you go to it.
+                            p Success doesn't come to you…you go to it.
+                            a(href='#') Read More...
+
+                .blog2.col-xxl-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xm-12
+                    .blog_header
+
+                        h1.blog_header-one  Blog
+
+                        p.blog_header-pp Success doesn't come to you…you go to it.
+
+
+                    .blog_item
+                        .blog_item-img
+                            span(style="background-image: url('static/img/blog2.png') ")
+                        .blog_item-content
+                            h3 Hello, I'm </br> David Mandalyan
+                            h5 A man is always afraid of the unknown, because what is known is less scary -
+                            p    Success doesn't come to you…you go to it.
+                            a(href='#') Read More...
+
+                .blog3.col-xxl-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xm-12
+                    .blog_item
+                        .blog_item-img
+                            span(style="background-image: url('static/img/blog3.png') ")
+                        .blog_item-content
+                            h3 Hello, I'm </br> David Mandalyan
+                            h5 Life is just a dream. You dream nightmare. But soon there will be morning.
+                            p Success doesn't come to you…you go to it.
+                            a(href='#') Read More...
+
+        section.forms
+            .col-xxl-5.col-xl-6.col-lg-6.col-md-6.col-sm-9.col-xm-12.item-forms
+
+
+                .cd-popup.contact(role='alert')
+                    form#contactform.contact-form(name='contactform')
+                        .cd-popup-container(style='')
+
+
+                            h1#contactblurb.user-message
+                            .name
+                                label(for='name') *Your Name
+                                input#name(type='text', name='name')
+                            .email
+                                label(for='email') *Your Email
+                                input#email(type='text', name='email')
+                            .message
+                                label(for='message') *Your Message
+                                textarea#message(name='message')
+
+
+                            .submit
+                                input#submit.buttons(type='submit', name='submit', value='Send Massage')
+                .cd-popup.notification.height(role='alert')
+                    .cd-popup-container.height
+
+
+                        h1#notification-text СПАСИБО ЗА ЗАЯВКУ!
+                            span Наш менеджер скоро свяжется  с вами.
+            button.Scroll-to-top Scroll To Top
+
+        footer
+            .container.col-xxl-9
+                .footer_bloks
+                    .footer_header
+                        h1  FOOTER
+
+
+
+
+
+
+
+
+
+
+
+    script(src="static/js/libs.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js")
+    script(src="static/js/main.js")
+
+
+
